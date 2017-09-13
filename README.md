@@ -1,0 +1,2 @@
+# comandos
+Starting with linux
