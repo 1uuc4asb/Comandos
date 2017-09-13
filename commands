@@ -5,5 +5,8 @@ Most used commands: =D
  rm /path                    # Remove something
  mv /path                    # Move something
  mv /path/file. /path/file2. # Rename something
+ su (user)                   # Loging with other user
+ su                          # Log as super user (root)
+ sudo (command)              # Do adm tasks without be logged in as root.
  
 Feel free to help :)
