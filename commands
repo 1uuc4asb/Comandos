@@ -8,5 +8,5 @@ Most used commands: =D
  su (user)                   # Loging with other user
  su                          # Log as super user (root)
  sudo (command)              # Do adm tasks without be logged in as root.
- 
+ / 13/09/2017
 Feel free to help :)
