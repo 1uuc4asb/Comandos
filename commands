@@ -1,7 +1,7 @@
 Most used commands: =D
 
-pacman -S # Install packages
-pacman -R # Remove packages
-rm /path # Remove something
-mv /path # Move something
+pacman -S                   # Install packages
+pacman -R                   # Remove packages
+rm /path                    # Remove something
+mv /path                    # Move something
 mv /path/file. /path/file2. # Rename something
