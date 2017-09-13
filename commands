@@ -8,5 +8,13 @@ Most used commands: =D
  su (user)                   # Loging with other user
  su                          # Log as super user (root)
  sudo (command)              # Do adm tasks without be logged in as root.
+ killall (program_name)      # Kill all process of a program.
+ hystory                     # A hystory of commands executed.
+ mkdir (folder)              # Creates a new folder.
+ wget url.com/file.pdf       # Download a file.
+ which (program_name)        # Find a path of program bin.
+ touch file.txt              # Creates a new file.
+ ls -lha                     # List files from directory even occult.
+ 
  / 13/09/2017
 Feel free to help :)
