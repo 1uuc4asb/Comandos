@@ -17,4 +17,24 @@ Most used commands: =D
  ls -lha                     # List files from directory even occult.
  
  / 13/09/2017
+
+mount /path                  # Mount
+umount /path                 # Umount haha
+mkfs.vfat /path              # Format in fat32
+mkfs.ntfs /path              # 
+(Core utilities)
+cd /path                     # Change the directory in terminal (For example:
+                             # I open the terminal in root. I can change the directory
+                             # to another folder. something like cd /home/user/Desktop/folder1
+                             # Now my terminal is open in folder1 of desktop.
+mkdir /path                  # Create a folder/directory
+rmdir /path                  # Remove a folder/directory
+rm -r /path                  # Remove a folder/directory and all your files.
+ls /path                     # List files
+ls -a /path                  # List hidden files
+ls -al                       # List hidden files and properties
+chmod +m /path               # Make a file executable (Never used that one but, never know...)
+
+/ 17/09/2017
+               
 Feel free to help :)
