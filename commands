@@ -1,58 +1,109 @@
 Most used commands: =D
  
- pacman -S                   # Install packages
- pacman -R                   # Remove packages
- rm /path                    # Remove something
- mv /path                    # Move something
- mv /path/file. /path/file2. # Rename something
- su (user)                   # Loging with other user
- su                          # Log as super user (root)
- sudo (command)              # Do adm tasks without be logged in as root.
- killall (program_name)      # Kill all process of a program.
- hystory                     # A hystory of commands executed.
- mkdir (folder)              # Creates a new folder.
- wget url.com/file.pdf       # Download a file.
- which (program_name)        # Find a path of program bin.
- touch file.txt              # Creates a new file.
- ls -lha                     # List files from directory even occult.
+ pacman -S                                                   # Install packages
+ pacman -R                                                   # Remove packages
+ rm /path                                                    # Remove something
+ mv /path                                                    # Move something
+ mv /path/file. /path/file2.                                 # Rename something
+ su (user)                                                   # Loging with other user
+ su                                                          # Log as super user (root)
+ sudo (command)                                              # Do adm tasks without be logged in as root.
+ killall (program_name)                                      # Kill all process of a program.
+ hystory                                                     # A hystory of commands executed.
+ mkdir (folder)                                              # Creates a new folder.
+ wget url.com/file.pdf                                       # Download a file.
+ which (program_name)                                        # Find a path of program bin.
+ touch file.txt                                              # Creates a new file.
+ ls -lha                                                     # List files from directory even occult.
  
  / 13/09/2017
 
-mount /path                  # Mount
-umount /path                 # Umount haha
-mkfs.vfat /path              # Format in fat32
-mkfs.ntfs /path              # 
+mount /path                                                  # Mount
+umount /path                                                 # Umount haha
+mkfs.vfat /path                                              # Format in fat32
+mkfs.ntfs /path                                              # 
 
-(Core utilities)
-cd /path                     # Change the directory in terminal (For example:                      //CD PATH
-                             # I open the terminal in root. I can change the directory             //CD PATH
-                             # to another folder. something like cd /home/user/Desktop/folder1     //CD PATH
-                             # Now my terminal is open in folder1 of desktop.                      //CD PATH
+(Core utilities)                  
+cd /path                                                     # Change the directory in terminal (For example:                      //CD PATH
+                                                             # I open the terminal in root. I can change the directory             //CD PATH
+                                                             # to another folder. something like cd /home/user/Desktop/folder1     //CD PATH
+                                                             # Now my terminal is open in folder1 of desktop.                      //CD PATH
                              
                              
-mkdir /path                  # Create a folder/directory
-rmdir /path                  # Remove a folder/directory
-rm -r /path                  # Remove a folder/directory and all your files.
-ls /path                     # List files
-ls -a /path                  # List hidden files
-ls -al                       # List hidden files and properties
-chmod +m /path               # Make a file executable (Never used that one but, never know...)
+mkdir /path                                                  # Create a folder/directory
+rmdir /path                                                  # Remove a folder/directory
+rm -r /path                                                  # Remove a folder/directory and all your files.
+ls /path                                                     # List files
+ls -a /path                                                  # List hidden files
+ls -al                                                       # List hidden files and properties
+chmod +m /path                                               # Make a file executable (Never used that one but, never know...)
 
 / 17/09/2017
 
 continuing with the core utilities..
 
-cat /path/file              # Show file contents
-strings                     # Show printable characters in binary files ( Really, i think i'll never use that. Only time can tell )
-find ~ -name file's-name    # Search for a file ( VERY USEFUL )
-df -h                       # Show remaining space on all partitions
-ps -A                       # Show all running processes
-killall process             # Kill all running instances of a process
+cat /path/file                                               # Show file contents
+strings                                                      # Show printable characters in binary files ( Really, i think i'll never use that. Only time can tell )
+find ~ -name file's-name                                     # Search for a file ( VERY USEFUL )
+df -h                                                        # Show remaining space on all partitions
+ps -A                                                        # Show all running processes
+killall process                                              # Kill all running instances of a process
 
 IMPORTANT TO KNOW: in "~/path/file", for example," ~ " means the personal folder.
                    in " ls *.mkv ", for example, " * " # is a regular expression that means something like "ALL". 
                                                       #in this particular case, the therminal will list all mkv files.
 / 21/09/2017
-                                                    
+
+chown (you user for example) (file)                          # Change Owner of a file(VERY IMPORTANT)
+EXAMPLE: sudo chown lucas /path/cu.html                      #
+You can also, change the group.
+EXAMPLE: sudo chown lucas:users /path/file                   # Change Owner and group of a file
+
+
+########################################################################################################################
+    
+ls -l /path                                                  # List files and display metadata (VERY IMPORTANT)
+EXAMPLE OUTPUT:
+
+total 128
+drwxr-xr-x 2 archie users  4096 Jul  5 21:03 Desktop         #
+drwxr-xr-x 6 archie users  4096 Jul  5 17:37 Documents       #
+drwxr-xr-x 2 archie users  4096 Jul  5 13:45 Downloads       #
+-rw-rw-r-- 1 archie users  5120 Jun 27 08:28 customers.ods   #
+-rw-r--r-- 1 archie users  3339 Jun 27 08:28 todo            #
+-rwxr-xr-x 1 archie users  2048 Jul  6 12:56 myscript.sh     #
+
+Explanation: ls -l displays 
+respectively:
+- type and permissions
+- number of hard links 
+- owner user name
+- group name 
+- size
+- last modification
+- entilty name
+
+The first character is the type.
+"d" means directory
+"-" means file
+"p" means named pipe (aka FIFO) # idk what it is but, is this.
+"l" means link
+
+after the type comes permissions
+2° character tells if is readable or not. 
+
+r means readable //// - means non readable.
+
+3° tells if is writable, that is, if can be modified. 
+
+w writable //// - non writable
+
+...........
+There are 3 columns. 
+The first represents the owner permissions, second the group permissions and the last represents all users.
+
+########################################################################################################################
+
+28/09/2017
 
 Feel free to help :)
